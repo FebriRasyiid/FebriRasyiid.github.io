@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: forestgreen;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(66, 245, 66);
+}
+
+header {
+    display: inline;
+}
+
+header>div {
+    text-align: center;
+    background-color: rgb(66, 245, 66);
+}
+
+nav{
+    background-color: rgb(9,224,127);
+    text-align: right;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+ul>li{
+    display: inline-block;
+    list-style: none;
+    margin: auto 10px;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    
+}
+
+a:hover {
+    color: black;
+}
+
+main {
+    overflow: auto;
+}
+
+article{
+    border: 5px solid grey;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: greenyellow;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+
+article>p, section>p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+img {
+    height: 150px;
+    float: left;
+}
+
+#profil {
+    width: 150px;
+    margin: auto;
+}
+
+#profil>img {
+    float:none;
+}
+
+#content {
+    width: 75%;
+    float: left;
+}
+
+.tinggi>div{
+    text-align: justify;
+    width: 70%;
+    float: left;
+}
+
+.tinggi>table{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+aside {
+    width: 25%;
+    margin-top: 10px;
+    border: 5px solid grey;
+    padding: 10px 10px;
+    background-color: skyblue;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    float: right;
+    overflow: auto;
+}
+
+#counter {
+    width: 25%;
+    background-color: black;
+    color: blue;
+    padding: 10px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    float:right;
+}
+
+#timer {
+    width: 25%;
+    background-color: dimgray;
+    color: blue;
+    padding: 10px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    float:right;
+}
+
+#counter:hover, #timer:hover{
+    background-color: greenyellow;
+}
+
+
+.box {
+    display: inline-block;
+    width: 30%;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+h5 {
+    display: inline;
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    #content, aside, #timer, #counter {
+        width: 100%;
+        float: none;
+    }
+}
